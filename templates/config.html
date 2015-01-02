@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../assets/modules/seagulllibrary/css/jPicker-1.1.6.min.css" />
 </head>
 <body style="padding:0 10px;">
-	<div id="js-msgbox" class="b-msg [+msg_type+]"><div id="js-msgbox__text">[+msg+]</div></div>
+	<div id="js-msg" class="msg [+msgType+]"><div class="msg__text">[+msg+]</div></div>
 	<h1>[+title+]</h1>
 	<ul class="actionButtons">
 		<li><a href="#" onclick="postForm(); return false;"><img alt="icons_delete_document" src="/assets/modules/seagulllibrary/css/images/back.png" /> назад</a></li>
@@ -16,10 +16,6 @@
 	<form id="f-config" class="b-form" method="post">
 		[+config+]
 		<input name="cmd" type="hidden" value="saveConfig" />
-		<ul class="actionButtons">
-			<li><a href="#" onclick="postForm(); return false;"><img alt="icons_delete_document" src="/assets/modules/seagulllibrary/css/images/back.png" /> назад</a></li>
-			<li><a href="#" onclick="$('#f-config').submit(); return false;"><img src="media/style/MODxCarbon/images/icons/save.png" alt="icons_save" /> Сохранить</a></li>
-		</ul>
 	</form>
 
 	<form name="module" method="post">
